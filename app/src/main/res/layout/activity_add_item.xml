@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_item">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/app"/>
+
+    <TextView
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/image"
+        android:textSize="25sp"
+        android:text="Hello over there. Its an add to cart kinda day"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/txtAddItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Item"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/top"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/txtItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Item name:"
+        style="@style/TextViews"
+        android:layout_below="@+id/txtAddItem"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/inputItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/editTexts"
+        android:hint="Enter item name"
+        android:layout_below="@+id/txtItemName"/>
+
+    <TextView
+        android:id="@+id/txtItemPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Item Price: Rs."
+        style="@style/TextViews"
+        android:layout_below="@+id/inputItemName"/>
+
+    <EditText
+        android:id="@+id/inputItemPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/editTexts"
+        android:hint="Enter price of the item"
+        android:inputType="number"
+        android:layout_below="@+id/txtItemPrice"/>
+
+    <TextView
+        android:id="@+id/txtItemImageName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextViews"
+        android:text="Image of item: "
+        android:layout_below="@+id/inputItemPrice" />
+
+    <EditText
+        android:id="@+id/inputItemImageName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/editTexts"
+        android:hint="Image name of item"
+        android:layout_below="@+id/txtItemImageName"/>
+
+    <TextView
+        android:id="@+id/txtItemDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextViews"
+        android:text="Item Description"
+        android:layout_below="@+id/inputItemImageName"/>
+
+    <EditText
+        android:id="@+id/inputItemDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/editTexts"
+        android:hint="Enter description of item"
+        android:layout_below="@+id/txtItemDescription"/>
+
+    <Button
+        android:id="@+id/addItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputItemDescription"
+        android:layout_centerHorizontal="true"
+        android:text="Add Item"
+        android:layout_marginTop="30dp"/>
+
+
+</RelativeLayout>
